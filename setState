@@ -1,0 +1,49 @@
+class App extends Component {
+
+    constructor(props) {
+        super(props)
+        // Set initial state 
+        this.state = { greeting: [] }
+
+        // Binding this keyword 
+        this.updateState = this.updateState.bind(this)
+
+        axios.get('http://localhost:5000/api/v1/profile').then(e => this.updateState(e.data))
+    }
+
+    // axios.get('http://localhost:5000/api/v1/profile').then(e => this.updateState(e.data[0].namaDepan))
+    // `$(e.id)`
+
+    updateState(f) {
+        // Changing state 
+        this.setState({
+            greeting:
+                f
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>Greetings Portal</h2>
+                {this.state.greeting.map(e => {
+                    return (
+                        <div key={e.nim}>nim: {e.nim} nama: {e.namaDepan} aksi: <Tombol title={'edit'} warna={'primary'} />
+                            <hr />
+
+                        </div>
+                    )
+                })}
+
+                {/* Set click handler */}
+                <button onClick={() => this.updateState('malik')}>
+                    Click me!
+                </button>
+                <button onClick={() => this.updateState('agus')}>
+                    Klik
+                </button>
+
+            </div>
+        )
+    }
+}
