@@ -1,0 +1,5 @@
+<MyForm items={['namadepan','nama belakang']}ketikaBerubah={e =>{
+                console.log(e)
+            }}/>
+
+//console.log untuk coba input data
