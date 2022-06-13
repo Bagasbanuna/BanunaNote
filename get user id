@@ -1,0 +1,3 @@
+
+let adaUser = window.localStorage.getItem('user')
+let iniUser = JSON.parse(adaUser).Id
