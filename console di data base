@@ -1,0 +1,25 @@
+const CreateRencanakerja = expressAsyncHandler (async (req, res) =>{
+    let body = req.body
+    console.log(body)
+ 
+    // let renja = await prisma.rencanakerja.create({
+    //     data: {
+    //         Id: Number(Id),
+    //         title: title,
+    //         tanggal: new Date (tanggal), 
+    //         keterangan: keterangan,
+    //         status: status,
+    //         userId: Number(userId)
+    //     }
+    // })
+
+    // let success = renja !=null
+    // let result = {
+    //     success: success,
+    //     data: renja
+    // }
+
+    // res.json(result)
+})
+
+//UNTUK CEK DATA SUDAH MASUK APA BELLUM
