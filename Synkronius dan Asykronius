@@ -1,0 +1,19 @@
+Tipe data singkronius = tidak menunggu feedback dari server dan perintah selanjutnya bisa di eksekusi
+
+//Example
+function statusRenjaAcc (){
+  axios.get("http://localhost:5000/api/v1/rencanakerja/statusacc").then((sacc) =>{
+    renjaAcc.val = sacc.data
+    console.log(sacc.data, "ini status renja acc")
+  })
+  
+}
+
+
+Asyingkronius = menunggu data di eksekusi dan mendapat feed back dari server baru mrnjalankan perintah dibawahnya
+//Example
+async function statusRenjaDone (){
+  let data = await axios.get("http://localhost:5000/api/v1/rencanakerja/statusdone");
+  renjaDone.val = data.data
+  console.log(data.data)
+}
