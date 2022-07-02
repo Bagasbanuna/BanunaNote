@@ -1,0 +1,9 @@
+Dalam pemanggilan menggunakan [] atau Array bisa di pecah menggunakan map
+Ex:
+{Data.val.map((a) =>{
+  return (
+  <h1/>
+  )
+)}
+
+Dalam pemanggilan menggunakan {} atau  Map/Body
