@@ -1,0 +1,21 @@
+// Client //
+// ini jika data berbentuk map/body
+const body = {
+  dataUser: {
+    username: "",
+    email: " ",
+  },
+  dataProfile: {
+    nim: "",
+  },
+  userId: "",
+};
+
+//ini jika data berbentuk Array
+const body2 = [body]
+
+//Body
+{body.dataProfile.nim}
+
+//Array
+{body2[0].dataProfile.nim }
