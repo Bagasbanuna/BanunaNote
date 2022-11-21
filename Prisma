@@ -1,0 +1,11 @@
+<!-- Prisma -->
+<!-- DATABASE_URL="mysql://root:Bagasbanuna12@localhost:3306/mydb"
+    INGAT = Saat menginstall database harus sesuaikan itu MySql, Postgres, atau MariaDB
+    Harus di pahami penggunaan user, password dan localhost
+    Cek kembali saat prisma sudah terinstall di file '/prisma/schema.prisma' pastikan :
+    datasource db {
+    provider = "mysql"
+    url      = env("DATABASE_URL")
+    }
+    'provider sesuai apa yang kita install'
+ -->
