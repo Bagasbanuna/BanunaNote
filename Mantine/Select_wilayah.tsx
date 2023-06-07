@@ -1,5 +1,5 @@
 
-function Select_Wilayah(){
+export function Select_Wilayah(){
 return <>
 
 <Select
