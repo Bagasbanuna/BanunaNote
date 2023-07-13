@@ -11,7 +11,8 @@ Buka terminal
 Kalau belum ada maka jalankan: docker pull postgres
 *perintah ini akan mendownload*
 
-Jika sudah maka ketik: docker run -d --name bip-db -e "POSTGRES_PASSWORD=Production_123" -e "POSTGRES_USER=bip" -p 5433:5432 postgres
+Jika sudah maka run: 
+> docker run -d --name bip-db -e "POSTGRES_PASSWORD=Production_123" -e "POSTGRES_USER=bip" -p 5433:5432 postgres
 *akan keluar kode random kemuadian jalankan docker ps lagi dan hasilnya*
 CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS         PORTS                    NAMES
 b2f94a6b3072   postgres   "docker-entrypoint.s…"   3 seconds ago   Up 3 seconds   0.0.0.0:5433->5432/tcp   bip-db
