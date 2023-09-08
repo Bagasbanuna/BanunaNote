@@ -29,3 +29,6 @@ Bagass-MacBook-Air-2:hipmi-badung bagasbanuna$ makuro-tools
 ✔ pilih servernya › hipmi_5005
 ✖ server action › build
 bye ....
+
+lihat hasil :
+https://hipmi.wibudev.com/
